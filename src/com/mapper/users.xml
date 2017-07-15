@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.UserDao">
+<!--<insert id="adds" parameterType="com.entity.Users">
+insert into users(name,pass) values(#{name},#{pass}) 
+</insert>
+<delete id="deletes" parameterType="int">
+delete from users where id =#{id}
+</delete>
+<update id="updates" parameterType="com.test.entity.Users">
+
+update users set name=#{name} , pass=#{pass} where id=#{id}
+</update>
+
+<resultMap type="com.test.entity.Users" id="rut">
+<result property="name" column="u"/>
+<association property="role" javaType="com.test.entity.Role" >
+<result property="name"  column="r"/>
+</association>
+<collection property="set" ofType="com.test.entity.Tels">
+<result property="tel" column="t"/>
+</collection>
+</resultMap>
+<select id="showusers" parameterType="com.test.entity.Page" resultType="com.test.entity.Users">
+&lt;!&ndash; select u.name as u,r.name as r,t.tel as t from role r right join(users u left join tels t on u.id=t.uid) on r.id = u.uid where u.uid=r.id; &ndash;&gt;
+select name,pass,id from users limit #{start},#{page} 
+
+</select>
+<select id="showall" resultType="com.test.entity.Users">
+select * from users;
+</select>-->
+<!-- <resultMap type="com.test.entity.Resource" id="mp">
+<result property="text" column="name"/>
+<result property="id" column="id"/>
+<collection property="children" ofType="com.test.entity.Resource">
+<result property="text" column="bname"/>
+<result property="id" column="bid"/>
+</collection>
+</resultMap>
+
+
+<select id="findpx" resultMap="mp">
+select a.name,a.id ,b.name as bname,b.id as bid from resource a  left join resource b on a.id = b.pid where a.pid =0;
+</select> -->
+<!--<select id="login"  resultType="com.test.entity.Users">
+select * from users where user_name=#{name} and pass=#{pass}
+</select>
+<delete id="deletem" parameterType="list">
+delete from users where id in
+<foreach collection="list" item="t" open="(" separator="," close=")">
+#{t}
+</foreach>
+</delete>
+
+<select id="search" parameterType="map" resultType="com.test.entity.Users">
+	select * from users
+	<where>
+	<if test="type=='account'">
+	name like #{key}
+	</if>
+	<if test="type=='pass'">
+	pass like #{key}
+	</if>
+	</where>
+
+</select>-->
+	<select id="getuid" resultType="java.lang.Integer">
+		SELECT uid FROM users WHERE user_name=#{user_name}
+	</select>
+	<insert id="addqiandao" parameterType="com.entity.qiandao">
+		insert into qiandao(uid,q_time,state) values(#{uid},#{q_time},#{state})
+	</insert>
+	<select id="getqx" resultType="com.entity.Role">
+		select role_name from users left join users_role using(uid) left join role  using(rid) where user_name=#{user}
+	</select>
+	<select id="gety" resultType="com.entity.qiandao">
+		select * FROM qiandao LEFT  JOIN users USING(uid)  WHERE user_name=#{user}
+
+	</select>
+	<select id="getj" resultType="com.entity.qiandao">
+		select * FROM  qiandao LEFT  JOIN users   USING (uid) LEFT JOIN users_role ur  USING (uid) LEFT JOIN role r on r.rid=ur.rid where r.role_name!="经理"
+	</select>
+	<select id="getall" resultType="com.entity.qiandao">
+		select * FROM qiandao LEFT  JOIN users USING(uid)
+	</select>
+	<select id="getoldtime" resultType="java.sql.Timestamp">
+		select max(q_time) from qiandao where uid=#{uid}
+	</select>
+	<delete id="delete1">
+		DELETE FROM qiandao WHERE qid= #{qid}
+	</delete>
+
+</mapper>

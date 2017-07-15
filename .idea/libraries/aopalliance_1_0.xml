@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="aopalliance-1.0">
+    <CLASSES>
+      <root url="jar://D:/作业/a党老师/jar/aopalliance-1.0.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/aspectjweaver-1.8.10.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/commons-fileupload-1.3.2.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/commons-io-2.5.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/commons-lang3-3.5.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/commons-logging-1.2.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/fastjson-1.2.32.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/slf4j-api-1.7.22.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-aop-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-aspects-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-beans-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-context-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-context-support-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-core-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-data-commons-1.13.1.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-data-keyvalue-1.2.1.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-data-redis-1.8.1.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-expression-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-instrument-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-instrument-tomcat-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-jdbc-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-jms-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-messaging-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-orm-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-oxm-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-test-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-tx-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-web-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-webmvc-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-webmvc-portlet-4.3.8.RELEASE.jar!/" />
+      <root url="jar://D:/作业/a党老师/jar/spring-websocket-4.3.8.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
